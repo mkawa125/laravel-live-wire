@@ -23,13 +23,11 @@ use App\Http\Controllers\UserController;
 //     return view('dashboard');
 // })->name('dashboard');
 
-// Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-//     Route::get('posts', Index::class)->name('posts');
-// });
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('posts', Index::class)->name('posts');
+});
 
-// Route::middleware(['auth:sanctum', 'verified'])->group(function (){
-//     Route::get('/',  [UserController::class, 'index'])->name('dashboard');
-//     Route::get('/dashboard',  [UserController::class, 'index'])->name('dashboard');
-// });
-Route::get('/',  [UserController::class, 'index'])->name('dashboard');
-Route::get('/dashboard',  [UserController::class, 'index'])->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->group(function (){
+    Route::get('/',  [UserController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard',  [UserController::class, 'index'])->name('dashboard');
+});
