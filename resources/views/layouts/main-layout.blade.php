@@ -13,25 +13,25 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
         .font-family-karla { font-family: karla; }
-        .bg-sidebar { background: #3d68ff; }
+        .bg-sidebar { background: #07254c; }
         .cta-btn { color: #3d68ff; }
         .upgrade-btn { background: #1947ee; }
         .upgrade-btn:hover { background: #0038fd; }
-        .active-nav-link { background: #1947ee; }
+        .active-nav-link { background: #22262d; }
         .nav-item:hover { background: #1947ee; }
         .account-link:hover { background: #3d68ff; }
     </style>
 </head>
 <body class="bg-gray-100 font-family-karla flex">
 
-    <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
-        <div class="p-6">
-            <a href="index.html" class="text-white text-3xl font-semibold uppercase hover:text-gray-300">LOGO</a>
-            <button class="w-full bg-white cta-btn font-semibold py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
+    <aside class="relative bg-sidebar h-screen w-80 hidden sm:block shadow-xl">
+        <div class="px-16 py-5 border-b border-slate-300">
+            <a href="index.html" class="text-white text-md font-semibold uppercase hover:text-gray-300">Laravel Live Wire</a>
+            {{-- <button class="w-full bg-white cta-btn font-semibold py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
                 <i class="fas fa-plus mr-3"></i> New Report
-            </button>
+            </button> --}}
         </div>
-        <nav class="text-white text-base font-semibold pt-3">
+        <nav class="text-white  pt-3">
             <a href="index.html" class="flex items-center active-nav-link text-white py-4 pl-6 nav-item">
                 <i class="fas fa-tachometer-alt mr-3"></i>
                 Dashboard
